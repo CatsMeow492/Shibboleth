@@ -21,3 +21,15 @@ wget https://raw.githubusercontent.com/rbsec/dnscan/master/subdomains-10000.txt
 gobuster dir -u shibboleth.htb -w subdomains-10000.txt
 ```
 
+Gobuster revealed 2 subdomains:
+
+```
+/forms
+/assets
+```
+
+![Forms Subdomain](forms.png)
+![Assets Subdomain](assets.png)
+
+Neither one of the subdomains seems to reveal anything of use.  So we continue the enumeration.  Maybe we'll have more luck with FFUF.
+
