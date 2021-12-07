@@ -76,7 +76,10 @@ For good measure let's gobust the zabbix.shibboleth.htb directory just in case w
 
 ```
 gobuster dir -u zabbix.shibboleth.htb -w subdomains-10000.txt -o gobuster.zabbix.shiboleth.txt
+gobuster dir -u zabbix.shibboleth.htb -w Filenames_or_Directories_Common.wordlist -o gobuster2.zabbix.shiboleth.txt
 ```
+
+The additional scans revealed a ton of new directories including some .php directories.
 
 A login form almost always means
 .
